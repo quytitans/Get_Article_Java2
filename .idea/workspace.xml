@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ff6e544c-e241-4e23-b760-1d1b254ddf0c" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/VNexpressArticles/Mainthread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VNexpressArticles/Mainthread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/VNexpressArticles/MultiThread/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VNexpressArticles/MultiThread/MyThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/VNexpressArticles/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VNexpressArticles/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/VNexpressArticles/model/ArticleModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VNexpressArticles/model/ArticleModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/VNexpressArticles/unity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VNexpressArticles/unity/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/VNexpressArticles/util/DateTimeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VNexpressArticles/util/DateTimeUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/VNexpressArticles/Mainthread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/VNexpressArticles/Mainthread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/VNexpressArticles/MultiThread/MyThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/VNexpressArticles/MultiThread/MyThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/VNexpressArticles/MultiThread/demoRunable.class" beforeDir="false" />
@@ -108,7 +113,7 @@
       <workItem from="1626541520015" duration="1426000" />
       <workItem from="1626623972132" duration="3426000" />
       <workItem from="1626628178446" duration="1969000" />
-      <workItem from="1626666352971" duration="977000" />
+      <workItem from="1626666352971" duration="1184000" />
     </task>
     <servers />
   </component>
@@ -126,16 +131,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/VNexpressArticles/Mainthread.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

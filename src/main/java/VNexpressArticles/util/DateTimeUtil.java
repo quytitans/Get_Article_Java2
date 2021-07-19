@@ -9,7 +9,7 @@ public class DateTimeUtil {
 
     private static SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
-    public static Date parseDateFromString(String strDateTime){
+    public static Date parseDateFromString(String strDateTime) {
         try {
             return simpleDateFormat.parse(strDateTime);
         } catch (ParseException e) {
@@ -18,7 +18,7 @@ public class DateTimeUtil {
         return Calendar.getInstance().getTime();
     }
 
-    public static String formatDateToString(Date date){
+    public static String formatDateToString(Date date) {
         return simpleDateFormat.format(date);
     }
 }

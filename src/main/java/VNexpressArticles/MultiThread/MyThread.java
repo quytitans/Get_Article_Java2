@@ -6,7 +6,6 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
 import java.io.IOException;
-import java.util.Date;
 
 public class MyThread extends Thread {
     private String url;
@@ -14,8 +13,6 @@ public class MyThread extends Thread {
     private String description;
     private String content;
     private String thumbnail;
-    private Date createdAt;
-    private Date updatedAt;
     private int status;
 
     public MyThread(String url) {
@@ -52,8 +49,7 @@ public class MyThread extends Thread {
             if (thumbnailElement != null) {
                 thumbnail = thumbnailElement.attr("data-src");
             }
-//            thumbnail = "hello anh quy";
-            int status = 1;
+            status = 1;
             article = new Article(url, title, description, content, thumbnail, status);
         } catch (IOException e) {
             e.printStackTrace();

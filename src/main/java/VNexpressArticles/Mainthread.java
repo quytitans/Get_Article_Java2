@@ -2,10 +2,8 @@ package VNexpressArticles;
 
 import VNexpressArticles.MultiThread.MyThread;
 import VNexpressArticles.controller.ArticleController;
-import VNexpressArticles.unity.Article;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
@@ -14,7 +12,6 @@ import java.util.Calendar;
 import java.util.List;
 
 public class Mainthread {
-
     public static void main(String[] args) {
         Elements urlArticles;
         long startTime = Calendar.getInstance().getTimeInMillis();
@@ -41,9 +38,9 @@ public class Mainthread {
             }
         }
         for (int i = 0; i < listThreads.size(); i++) {
-           ArticleController articleController = new ArticleController();
-           articleController.insertArticlesCollection( listThreads.get(i).getArticle());
-            System.out.println(i+1 + " " + listThreads.get(i).getArticle().getTitle());
+            ArticleController articleController = new ArticleController();
+            articleController.insertArticlesCollection(listThreads.get(i).getArticle());
+            System.out.println(i + 1 + " " + listThreads.get(i).getArticle().getTitle());
         }
         long endTime = Calendar.getInstance().getTimeInMillis();
         System.out.println("save all data complete !!!");

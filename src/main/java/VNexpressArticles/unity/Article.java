@@ -85,7 +85,7 @@ public class Article {
     }
 
     public String getCreatedAtStr() {
-       return DateTimeUtil.formatDateToString(this.createdAt);
+        return DateTimeUtil.formatDateToString(this.createdAt);
     }
 
     public void setCreatedAt(Date createdAt) {
@@ -95,6 +95,7 @@ public class Article {
     public Date getUpdatedAt() {
         return updatedAt;
     }
+
     public String getUpdatedAtStr() {
         return DateTimeUtil.formatDateToString(this.updatedAt);
     }
