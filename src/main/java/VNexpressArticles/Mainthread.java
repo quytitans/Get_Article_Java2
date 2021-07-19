@@ -46,6 +46,7 @@ public class Mainthread {
             System.out.println(i+1 + " " + listThreads.get(i).getArticle().getTitle());
         }
         long endTime = Calendar.getInstance().getTimeInMillis();
-        System.out.println(endTime - startTime + " mls");
+        System.out.println("save all data complete !!!");
+        System.out.println(endTime - startTime + " mls Working time");
     }
 }
