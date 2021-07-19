@@ -1,14 +1,22 @@
 package VNexpressArticles.MultiThread;
 
-import VNexpressArticles.controller.ArticleController;
 import VNexpressArticles.unity.Article;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 
 import java.io.IOException;
+import java.util.Date;
 
 public class MyThread extends Thread {
     private String url;
+    private String title;
+    private String description;
+    private String content;
+    private String thumbnail;
+    private Date createdAt;
+    private Date updatedAt;
+    private int status;
 
     public MyThread(String url) {
         this.url = url;
@@ -28,12 +36,25 @@ public class MyThread extends Thread {
         Document articleDetails = null;
         try {
             articleDetails = Jsoup.connect(url).get();
-            String title = articleDetails.select(".sidebar-1 h1").first().text();
-            String description = "update later";
-            String content = "update later";
-            String thumbnailUrl = "update later";
+            Element titleElement = articleDetails.selectFirst("h1.title-detail");
+            if (titleElement != null) {
+                title = titleElement.text();
+            }
+            Element descriptionElement = articleDetails.selectFirst("p.description");
+            if (descriptionElement != null) {
+                description = descriptionElement.text();
+            }
+            Element contentElement = articleDetails.selectFirst("p.description");
+            if (contentElement != null) {
+                content = contentElement.text();
+            }
+            Element thumbnailElement = articleDetails.selectFirst("div.fig-picture picture img");
+            if (thumbnailElement != null) {
+                thumbnail = thumbnailElement.attr("data-src");
+            }
+//            thumbnail = "hello anh quy";
             int status = 1;
-            article = new Article(url, title, description, content, thumbnailUrl, status);
+            article = new Article(url, title, description, content, thumbnail, status);
         } catch (IOException e) {
             e.printStackTrace();
         }
